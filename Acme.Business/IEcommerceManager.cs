@@ -8,6 +8,6 @@ namespace Acme.Business
 {
     public interface IEcommerceManager
     {
-        string AddToBasket(string basketID, string productSKU, int quantity);
+        string AddToBasket(string productSKU, int quantity);
     }
 }

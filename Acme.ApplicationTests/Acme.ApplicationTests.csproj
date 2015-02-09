@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,7 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ECommerceManagerTestCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Acme.Business\Acme.Business.csproj">
+      <Project>{5490546f-48b8-4634-8103-7ff32c549896}</Project>
+      <Name>Acme.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Acme.DataAccess\Acme.DataAccess.csproj">
+      <Project>{4ebbca30-7406-4546-95fc-67ebb17cf5c9}</Project>
+      <Name>Acme.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitTestingFramework\UnitTestingFramework.csproj">
+      <Project>{bdcf871f-0320-4ab6-b767-68df465f7733}</Project>
+      <Name>UnitTestingFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
