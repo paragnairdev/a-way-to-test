@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ECommerceManagerTestCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="when_i_add_product_to_new_cart.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Acme.Business\Acme.Business.csproj">
